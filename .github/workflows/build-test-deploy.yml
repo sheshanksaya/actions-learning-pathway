@@ -1,9 +1,9 @@
-name: Hello-world
+name: build-test-deploy
 on: push
 jobs:
- hello-world-job:
+ build:
   runs-on: ubuntu-latest
- steps:
+  steps:
   - name: checkout code repository
     uses: actions/checkout@v4
   - name: prints the given message
